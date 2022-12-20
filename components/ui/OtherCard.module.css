@@ -1,0 +1,11 @@
+.container {
+	margin-top: 0.5rem;
+	padding: 0.37rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: slategrey;
+	color: var(--colorDark);
+	gap: 0.3rem;
+	border-radius: 0.5rem;
+}

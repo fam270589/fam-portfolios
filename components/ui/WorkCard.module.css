@@ -1,0 +1,48 @@
+.containerDark {
+	background-color: var(--bgCardDark);
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.containerLight {
+	background-color: var(--bgCardLight);
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.containerDark,
+.containerLight,
+.title,
+.place,
+.subtitle {
+	text-align: center;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.place {
+	font-size: 1.1rem;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.subtitle {
+	font-style: italic;
+	margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+	.containerDark,
+	.containerLight,
+	.title,
+	.place,
+	.subtitle {
+		text-align: left;
+	}
+		
+	.subtitle {
+		margin-bottom: 1rem;
+	}
+}

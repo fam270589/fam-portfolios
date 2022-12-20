@@ -1,0 +1,41 @@
+.buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5rem;
+}
+
+.button {
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: inherit;
+	color: inherit;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.dots {
+	display: flex;
+	gap: 1.57rem;
+}
+
+.dot {
+	height: 0.7rem;
+	width: 0.7rem;
+	border-radius: 50%;
+	cursor: pointer;
+	border-width: 0.1rem;
+	border-color: var(--bgCardLight);
+}
+
+.dotActive {
+	border: none;
+	background: slateblue;
+	height: 0.7rem;
+	width: 0.7rem;
+	border-radius: 50%;
+}

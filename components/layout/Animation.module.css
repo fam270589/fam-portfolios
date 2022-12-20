@@ -1,0 +1,40 @@
+.container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10rem;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: 1.3rem;
+	padding: 0.5rem;
+
+	border-bottom: 3px solid;
+	border-image-source: radial-gradient(
+		circle at bottom center,
+		blueviolet,
+		transparent 30%
+	);
+	border-image-slice: 1;
+}
+
+.contents {
+	margin: 1.5rem 1rem;
+}
+
+@media (min-width: 960px) {
+	.contents {
+		padding-inline: 2rem;
+	}
+}
+
+@media (min-width: 640px) {
+	.container {
+		margin-top: 3rem;
+	}
+}

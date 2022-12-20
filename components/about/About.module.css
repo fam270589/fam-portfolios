@@ -1,0 +1,69 @@
+.container {
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	position: relative;
+}
+
+.allContent {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.profile {
+	display: none;
+
+	width: 20rem;
+	height: auto;
+	border-radius: 0.5rem;
+	object-fit: cover;
+}
+
+.description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.experience {
+	text-align: center;
+	margin: 2rem 0.7rem 0.7rem 0.7rem;
+}
+
+.jobs {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+@media (min-width: 640px) {
+	.jobs {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 960px) {
+	.description {
+		padding-block: 3rem;
+	}
+	.profile {
+		display: flex;
+	}
+	.experience {
+		margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+	}
+}

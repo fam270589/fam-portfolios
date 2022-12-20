@@ -1,0 +1,184 @@
+.cardDark {
+	position: relative;
+	width: 18rem;
+	height: 3.7rem;
+	background: var(--bgCardDark);
+	color: var(--colorDark);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0.5rem;
+}
+
+.cardLight {
+	position: relative;
+	width: 18rem;
+	height: 3.7rem;
+	background: var(--bgCardLight);
+	color: var(--colorLight);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0.5rem;
+}
+
+.percent {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.percent svg {
+	display: none;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transform: rotate(270deg);
+}
+
+.number {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	padding-right: 1.2rem;
+}
+
+.number h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.number h1 span {
+	font-size: 1.3rem;
+}
+
+.title {
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+@media (min-width: 640px) {
+	.cardDark {
+		position: relative;
+		width: 12rem;
+		height: 17rem;
+		background: var(--bgCardDark);
+		color: var(--colorDark);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 0.5rem;
+	}
+
+	.cardLight {
+		position: relative;
+		width: 12rem;
+		height: 17rem;
+		background: var(--bgCardLight);
+		color: var(--colorLight);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 0.5rem;
+	}
+
+	.percent {
+		position: relative;
+		width: 150px;
+		height: 150px;
+	}
+
+	.percent svg {
+		display: flex;
+		position: relative;
+		width: 150px;
+		height: 150px;
+		transform: rotate(270deg);
+	}
+
+	.cardDark .percent svg circle {
+		width: 100%;
+		height: 100%;
+		fill: transparent;
+		stroke-width: 3;
+		stroke: var(--colorLight);
+		transform: translate(5px, 5px);
+	}
+
+	.cardLight .percent svg circle {
+		width: 100%;
+		height: 100%;
+		fill: transparent;
+		stroke-width: 3;
+		stroke: white;
+		transform: translate(5px, 5px);
+	}
+
+	.percent svg circle:nth-child(2) {
+		stroke: var(--clr);
+		stroke-dasharray: 440;
+		stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+	}
+
+	.dot {
+		position: absolute;
+		inset: 5px;
+		z-index: 2;
+		transform: rotate(calc(3.6deg * var(--num)));
+	}
+
+	.dot::before {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: var(--clr);
+
+		box-shadow: 0 0 10px var(--clr);
+	}
+
+	.number {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-right: 0;
+	}
+
+	.number h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.number h1 span {
+		font-size: 1.3rem;
+	}
+
+	.title {
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.3rem;
+	}
+}

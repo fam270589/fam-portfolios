@@ -1,0 +1,19 @@
+.darkContainer {
+	width: 18rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	border-radius: 0.5rem;
+	background: var(--bgCardDark);
+	padding: 1rem 1.3rem;
+}
+
+.lightContainer {
+	width: 18rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	border-radius: 0.5rem;
+	background: var(--bgCardLight);
+	padding: 1rem 1.3rem;
+}

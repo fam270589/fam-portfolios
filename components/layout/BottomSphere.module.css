@@ -1,0 +1,26 @@
+@keyframes colorchange {
+	0% {
+		background-color: blueviolet;
+		color: blueviolet;
+	}
+	100% {
+		background-color: darkslateblue;
+		color: darkslateblue;
+	}
+}
+
+.container {
+	background-color: blueviolet;
+	color: blueviolet;
+	border-radius: 50% 50% 0 0;
+	position: sticky;
+	bottom: 0;
+	height: 0.5rem;
+	width: 100%;
+	text-align: center;
+	filter: blur(0.5rem);
+	animation-name: colorchange;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}

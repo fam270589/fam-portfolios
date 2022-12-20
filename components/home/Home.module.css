@@ -1,0 +1,33 @@
+.container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	padding-inline: 1rem;
+}
+
+.lightTitle {
+	text-align: center;
+	font-size: 3.3rem;
+	background: var(--titleLight);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.darkTitle {
+	text-align: center;
+	font-size: 3.3rem;
+	background: var(--titleDark);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.secondTitle {
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 2.3rem;
+}

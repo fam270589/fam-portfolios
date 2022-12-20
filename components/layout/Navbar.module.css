@@ -1,0 +1,88 @@
+/* NAVBAR - Navbar styles */
+.navbar {
+	background-color: inherit;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+
+	width: 100%;
+	max-width: var(--maxWidth);
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: center;
+	padding-block: 0.5rem;
+}
+
+.firstUL,
+.secondUL,
+.secondULAct {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-inline: 3rem;
+	padding-bottom: 0.5rem;
+}
+
+.secondUL {
+	display: none;
+}
+
+.secondULAct {
+	display: flex;
+	gap: 0.7rem;
+}
+
+.navbar li {
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+	list-style: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.navbar li:hover {
+	border-bottom: 3px solid blueviolet;
+}
+
+.active {
+	color: blueviolet;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	border: none;
+	background: var(--titleDark);
+	color: var(--colorDark);
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+}
+
+@media (min-width: 960px) {
+	.navbar {
+		justify-content: space-between;
+		padding-block: 1rem 0.5rem;
+	}
+	.secondULAct {
+		gap: 3rem;
+	}
+}
+
+@media (min-width: 480px) {
+	.menu {
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar ul:nth-child(2) {
+		display: flex;
+	}
+}
