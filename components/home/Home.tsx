@@ -20,9 +20,9 @@ const Home = (props: Props) => {
 		<Page id="home">
 			<motion.div
 				className={classes.container}
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				viewport={{ amount: "all" }}
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				viewport={{ amount: 0.5 }}
 				transition={{ duration: 0.5 }}
 			>
 				<h1
