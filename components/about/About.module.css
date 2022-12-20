@@ -50,13 +50,10 @@
 	gap: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
 	.jobs {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-}
-
-@media (min-width: 960px) {
 	.description {
 		padding-block: 3rem;
 	}
