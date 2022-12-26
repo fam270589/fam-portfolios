@@ -17,7 +17,14 @@ const About = (props: Props) => {
 			<AnimationPage title="About Me.">
 				<div className={classes.container}>
 					<div className={classes.allContent}>
-						<Image src={'/static/profile.jpg'} alt="profile" className={classes.profile} width={720} height={1280} />
+						<Image
+							priority
+							src={"/static/profile.webp"}
+							alt="profile"
+							className={classes.profile}
+							width={720}
+							height={1280}
+						/>
 						<div className={classes.content}>
 							<p className={classes.description}>
 								I am a creative and enthusiastic Front-end Developer with two

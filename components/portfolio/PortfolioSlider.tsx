@@ -32,6 +32,9 @@ const PortfolioSlider = (props: Props) => {
 			<PortfolioCard
 				title={props.slides[currIndex].title}
 				image={props.slides[currIndex].image}
+				description={props.slides[currIndex].description}
+				demoLink={props.slides[currIndex].demoLink}
+				gitRepo={props.slides[currIndex].gitRepo}
 			/>
 			<div className={classes.buttons}>
 				<button className={classes.button} onClick={goToPrevious}>

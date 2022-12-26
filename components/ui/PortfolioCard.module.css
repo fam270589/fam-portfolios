@@ -32,8 +32,13 @@
 
 .image {
 	width: 100%;
+
 	object-fit: contain;
 	border-top: 1px solid blueviolet;
+}
+
+.description {
+	margin-block: 0 0.5rem;
 }
 
 .buttons {
@@ -64,6 +69,12 @@
 		margin-block: 0.7rem;
 		margin-inline: 0.7rem;
 		width: 15rem;
+	}
+	.image {
+		height: 100%;
+	}
+	.description {
+		margin-block: 1rem 0.5rem;
 	}
 	.button {
 		padding: 0.3rem 0.5rem;

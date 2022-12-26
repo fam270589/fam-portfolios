@@ -9,6 +9,7 @@ export interface IDarkmode {
 export type SlideObj = {
 	title: string;
 	image: StaticImageData;
-	demoLink?: string;
-	gitRepo?: string;
+	description: string;
+	demoLink: string;
+	gitRepo: string;
 };
