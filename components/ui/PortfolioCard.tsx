@@ -28,9 +28,8 @@ const PortfolioCard = (props: Props) => {
 			<p className={classes.title}>{props.title}</p>
 			<div className={classes.content}>
 				<Image
-					priority
 					src={props.image}
-					alt=""
+					alt="image"
 					width={300}
 					height={180}
 					className={classes.image}
